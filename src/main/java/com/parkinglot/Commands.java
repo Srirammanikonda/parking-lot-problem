@@ -23,5 +23,7 @@ public class Commands {
         commandsMap.put("leave", ParkingLot.class.getMethod("leave", String.class));
         commandsMap.put("status", ParkingLot.class.getMethod("status"));
         commandsMap.put("registration_numbers_for_cars_with_colour", ParkingLot.class.getMethod("getRegistrationNumbersFromColor", String.class));
+		commandsMap.put("slot_numbers_for_cars_with_colour", ParkingLot.class.getMethod("getSlotNumbersFromColor", String.class));
+        commandsMap.put("slot_number_for_registration_number", ParkingLot.class.getMethod("getSlotNumberFromRegNo", String.class));
     }
 }
